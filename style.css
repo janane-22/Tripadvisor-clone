@@ -1,0 +1,801 @@
+* {
+    font-family: "Questrial", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scroll */
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: solid rgb(252, 249, 249) 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.navbar__s1 {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.navbar__s2 p:hover {
+    border: solid gainsboro 0px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.navbar__s3 i,
+p:hover {
+    border: solid gainsboro 0px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+
+}
+
+.navbar__s2 p {
+    font-weight: 700;
+
+}
+
+.navbar__s3 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 100px;
+}
+
+.navbar__s3 button {
+
+    background-color: black;
+    border: solid black 1px;
+    color: white;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: 700;
+}
+
+/* search Section */
+.searchsection {
+    text-align: center;
+
+}
+
+.searchsection__list img {
+    width: 20px;
+
+}
+
+.searchsection__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.searchsection__list p {
+    font-weight: 700;
+}
+
+.searchsection__list p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.searchsection__title h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.searchsection__searchbar {
+    display: flex;
+    border: solid rgb(196, 175, 175) 2px;
+    border-radius: 40px;
+    justify-content: space-between;
+    width: 800px;
+    align-items: center;
+    margin-left: 280px;
+    padding: 0;
+    background-color: rgb(250, 248, 248);
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 5px;
+}
+
+.searchsection__searchbar__s2 button {
+    background-color: rgb(10, 222, 84);
+    border: solid green 1px;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.searchsection__searchbar__s1 {
+    margin: 2px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.searchsection__searchbar p {
+    color: gray;
+}
+
+/* imagecard */
+.imagecard__image img {
+    width: 1150px;
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    left: 50px;
+}
+
+.imagecard {
+    margin-bottom: 80px;
+}
+
+.imagecard__image {
+    margin: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.imagecard__desc {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+}
+
+.imagecard__desc button {
+    background-color: white;
+    padding: 15px;
+
+    border-radius: 25px;
+}
+
+/* best restaurants */
+.best-restaurants {
+    /* margin: 5px; */
+    /* padding: 3px; */
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+}
+
+.best-restaurants__images img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.best-restaurants__images img:hover {
+    opacity: 0.8;
+}
+
+.best-restaurants__arrowimg1 img {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.best-restaurants__arrowimg2 img {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.best-restaurants__arrowimg1 {
+    position: relative;
+    bottom: 150px;
+    right: 20px;
+}
+
+.best-restaurants__arrowimg2 {
+    position: relative;
+    bottom: 193px;
+    left: 1115px;
+}
+
+/* best places */
+.best-places {
+    /* margin: 5px;
+    padding: 3px; */
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+
+}
+
+.best-places__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.best-places__images img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.best-places__images img:hover {
+    opacity: 0.8;
+}
+
+.best-places__arrowimg2 img {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.best-places__arrowimg2 {
+    position: absolute;
+    bottom: 250px;
+    left: 1120px;
+}
+
+.best-places__images__div1 {
+    width: 250px;
+    position: relative;
+}
+
+.best-places__images__div2 {
+    width: 250px;
+    position: relative;
+}
+
+.best-places__images__div3 {
+    width: 250px;
+    position: relative;
+}
+
+.best-places__images__div4 {
+    width: 250px;
+    position: relative;
+}
+
+.best-places__images button {
+    border-radius: 35px;
+    border: solid rgb(237, 237, 240) 2px;
+}
+
+.best-places__images p {
+    font-size: 13px;
+}
+
+.best-places__images__heart {
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 50%;
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    bottom: 350px;
+    left: 220px;
+}
+
+.best-places__images__2025 img {
+    width: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+}
+
+.inspi-place {
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+
+}
+
+.inspi-place__images__img1 img,
+.inspi-place__images__img2 img,
+.inspi-place__images__img3 img {
+    width: 370px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.inspi-place__images img:hover {
+    opacity: 0.8;
+}
+
+.inspi-place__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.inspi-place__images p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.inspi-place__images__heart {
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 50%;
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    bottom: 250px;
+    margin: 5px;
+}
+
+.inspi-place__arrowimg2 {
+    position: absolute;
+    bottom: 150px;
+    left: 1125px;
+}
+
+.inspi-place__arrowimg2 img {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.place-iconic {
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    margin-top: 70px;
+}
+
+.place-iconic__image img {
+    width: 269px;
+    border-radius: 15px;
+
+}
+
+.place-iconic__image img:hover {
+    opacity: 0.8;
+}
+
+body button:hover {
+    background-color: gainsboro;
+}
+
+.place-iconic__image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+
+}
+
+.place-iconic__image h1 {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    filter: brightness(10);
+
+}
+
+.section-final {
+    margin-top: 50px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.section-final__image img {
+    width: 100%;
+
+}
+
+.section-final__2025 {
+    position: absolute;
+    bottom: 120px;
+    left: 100px;
+}
+
+.section-final__2025 img {
+    width: 70px;
+    padding-bottom: 10px;
+}
+
+.section-final__2025 p {
+    font-size: 65px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.section-final h2 {
+    color: white;
+}
+
+.section-final button {
+    background-color: white;
+    padding: 20px;
+    border: solid white 2px;
+    border-radius: 30px;
+}
+
+.themed-collection {
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    margin-top: 100px;
+}
+
+.themed-collection__images img {
+    width: 275px;
+    height: 330px;
+    border-radius: 15px;
+}
+
+.themed-collection__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+}
+
+.themed-collection__images img:hover {
+    opacity: 0.8;
+}
+
+.themed-collection__images p {
+    color: rgb(101, 99, 99);
+}
+
+.themed-collection__images h2 {
+    margin: 15px;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+    font-weight: 900;
+}
+
+.footer {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-left: 95px;
+    color: rgb(99, 97, 97);
+}
+
+.footer__part1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer__part1__sec1 {
+    display: flex;
+    gap: 40px;
+    color: rgb(99, 97, 97);
+    font-size: 14px;
+}
+
+.footer__part1__sec2 {
+    font-size: 14px;
+    position: relative;
+    right: 150px;
+    color: rgb(99, 97, 97);
+}
+
+.footer__part1__sec2 a {
+
+    color: rgb(99, 97, 97);
+}
+
+.footer__part2 {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.footer__part2__sec1 img {
+    width: 40px;
+}
+
+.footer__part2__sec2 a {
+    color: black;
+    padding-left: 5px;
+}
+
+.footer__part2__sec3 select {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.floating button {
+    background-color: green;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.floating {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+
+    }
+
+    .navbar__s1 img {
+        width: 75%;
+    }
+
+    .navbar__s2 {
+        display: none;
+    }
+
+    .navbar__s3 {
+        position: relative;
+        left: 80px;
+    }
+
+    * {
+        font-size: 12px;
+        
+    }
+
+    .searchsection {
+        display: none;
+    }
+
+    .imagecard img{
+        width:300px;
+        position: relative;
+        right: 0;
+        left: 0;
+        
+    }
+    
+    .imagecard__desc {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+        
+    }
+    
+
+    .best-restaurants__arrowimg2 img {
+        display: none;
+    }
+
+    .best-restaurants__arrowimg1 img {
+        display: none;
+    }
+    .best-restaurants img{
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 150px;
+        height: 200px;
+        margin-right: 0;
+    }
+
+    .inspi-place p {
+        font-size: 12px;
+    }
+    .inspi-place__images img{
+       left: 0;
+       width: 250px;
+    }
+    .inspi-place{
+        left:0;
+        margin: 50px;
+    }
+    .place-iconic__image img{
+        width: 250px;
+    }
+    .themed-collection__images img{
+        width: 250px;
+        height: 250px;
+    }
+    .section-final__2025 {
+        font-size: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .section-final img {
+        height: auto;
+    }
+
+    .section-final__2025 p {
+        font-size: 20px;
+    }
+
+    .section-final__2025 img {
+        width: 30px;
+    }
+    .footer{
+        position: absolute;
+        right: 0;  
+        margin-left: 5px;  
+    }
+    .floating button {
+        padding: 10px;
+    }
+    .footer__part1__sec2{
+        display: none;
+    }
+    .footer__part2__sec3{
+        display: none;
+    }
+    .footer__last p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+
+    }
+
+    .navbar__s1 img {
+        width: 75%;
+    }
+
+    .navbar__s2 {
+        display: none;
+    }
+
+    .navbar__s3 {
+        position: relative;
+        left: 80px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+    .searchsection {
+        display: none;
+    }
+
+    .imagecard img {
+        margin-top: 100px;
+        width: 550px;
+        height: 350px;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+
+    .imagecard__desc {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .best-restaurants {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: 50px;
+
+
+    }
+
+    .best-places {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: 50px;
+
+
+    }
+
+    .place-iconic {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: 50px;
+    }
+    .themed-collection{
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: 50px;
+    }
+
+    .best-restaurants__arrowimg2 img {
+        display: none;
+    }
+
+    .best-restaurants__arrowimg1 img {
+        display: none;
+    }
+
+    .inspi-place p {
+        font-size: 12px;
+    }
+
+    .section-final__2025 {
+        font-size: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .section-final img {
+        height: auto;
+    }
+
+    .section-final__2025 p {
+        font-size: 20px;
+    }
+
+    .section-final__2025 img {
+        width: 30px;
+    }
+
+    .floating button {
+        padding: 10px;
+    }
+}
