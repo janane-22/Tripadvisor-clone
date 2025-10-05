@@ -16,4 +16,4 @@ HTML5
 CSS3 (Flexbox, Grid, Animations, Media Queries)
 
 ## 📱 Live Demo
-[Add your live link here once deployed]
+https://janane-22.github.io/Tripadvisor-clone/
